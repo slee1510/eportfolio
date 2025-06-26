@@ -17,7 +17,7 @@ fetch("footer.html")
   function highlightCurrentPage() {
     let currentPath = window.location.pathname.split("/").pop();
 
-    if (currentPath === "") {
+    if (currentPath === "eportfolio") {
         currentPath = "index.html";
     }
 
