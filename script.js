@@ -15,7 +15,12 @@ fetch("footer.html")
   });
 
   function highlightCurrentPage() {
-    const currentPath = window.location.pathname.split("/").pop();
+    let currentPath = window.location.pathname.split("/").pop();
+
+    if (currentPath === "") {
+        currentPath = "index.html";
+    }
+
     const navLinks = document.querySelectorAll(".nav-right a");
 
     navLinks.forEach(link => {
