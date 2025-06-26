@@ -4,27 +4,25 @@ body, html {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgb(129, 129, 213);
-    padding: 2rem 4rem;
     color: rgb(216, 194, 236);
+    padding: 2rem 2rem; /* Padding for the entire navbar */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Aligns nav-left to left and nav-right to right */
     align-items: center;
-    padding: 2rem 4rem;
-    box-sizing: border-box;
+    max-width: 1200px; /* Optional: limit max width */
+    margin: 0 auto; /* Center the container horizontally */
 }
 
 .nav-left {
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    padding: 1rem 0.5rem;
 }
 
 .nav-right {
@@ -34,7 +32,7 @@ body, html {
     display: flex;
     gap: 1.5rem;
     margin: 0;
-    padding: 1rem 0.5rem;
+    padding: 0;
 }
 
 .nav-right a {
