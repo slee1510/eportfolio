@@ -1,1 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(129, 129, 213);
+    padding: 2rem 4rem;
+    color: rgb(216, 194, 236);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+}
+
+.nav-right {
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 1rem 0.5rem;
+}
+
+.nav-right a {
+    color: rgb(216, 194, 236);
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.nav-right a.active {
+    color: rgb(88, 54, 119);
+    font-weight: bold;
+    text-decoration: underline;
+}
