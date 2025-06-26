@@ -3,6 +3,10 @@ body, html {
     padding: 0;
 }
 
+body {
+    background-color: rgb(234, 220, 247);
+}
+
 .navbar {
     background-color: rgb(129, 129, 213);
     color: rgb(216, 194, 236);
@@ -13,6 +17,7 @@ body, html {
 
 .nav-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; /* Aligns nav-left to left and nav-right to right */
     align-items: center;
     max-width: 1200px; /* Optional: limit max width */
@@ -49,3 +54,156 @@ body, html {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/* FOOTER STYLE */
+
+.footbar {
+    background-color: rgb(129, 129, 213);
+    color: rgb(216, 194, 236);
+    padding: 2rem 2rem; /* Padding for the entire navbar */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns nav-left to left and nav-right to right */
+    align-items: center;
+    max-width: 1200px; /* Optional: limit max width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.foot-name {
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', serif;
+    /* font-weight: bold; */
+}
+
+.foot-email {
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    /* font-weight: bold; */
+    margin-bottom: 0.01;
+}
+
+.foot-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.icon-link img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 0.01rem;
+    margin-bottom: 0.01rem;
+    /* background-color: rgb(216, 194, 236);
+    padding: 0.2rem; */
+    transition: transform 0.2 ease;
+}
+
+.icon-link img:hover {
+    transform: scale(1.1);
+    background-color: rgb(216, 194, 236);
+}
+
+.email-icon {
+    padding: 0.2rem;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(216, 194, 236);
+    border-radius: 50%;
+}
+
+/* PROFILE PIC STYLING */
+
+.pfp {
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.5rem;
+    margin-left: 5rem;
+}
+
+/* PAGE TITLE */
+
+.page-title {
+    color: rgb(68, 43, 116);
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* ABOUT ME TITLE */
+
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hello-title {
+    color: rgb(68, 43, 116);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    display: flex;
+    justify-content: right;
+}
+
+.about-me-title {
+    color: rgb(68, 43, 116);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: right;
+}
+
+.about-me-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+/* .navbar {
+    background-color: rgb(129, 129, 213);
+    color: rgb(216, 194, 236);
+    padding: 2rem 2rem; Padding for the entire navbar
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; Aligns nav-left to left and nav-right to right
+    align-items: center;
+    max-width: 1200px; Optional: limit max width
+    margin: 0 auto; Center the container horizontally
+}
+
+.nav-left {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.nav-right {
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+} */
