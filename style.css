@@ -154,18 +154,11 @@ body {
     padding: 2rem 2rem;
 }
 
-.hello-title {
+.about-me-title {
     color: rgb(68, 43, 116);
     font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
-    display: flex;
-    /* justify-content: right; */
-}
-
-.about-me-title {
-    color: rgb(68, 43, 116);
-    font-size: 1.5rem;
     display: flex;
     /* justify-content: right; */
 }
@@ -176,8 +169,20 @@ body {
     align-items: center;
     text-align: center;
     max-width: 400px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
+
+.about-me-paragraph {
+    color: rgb(68, 43, 116);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
 
 
 /* .navbar {
