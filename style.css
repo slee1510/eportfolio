@@ -122,15 +122,15 @@ body {
 /* PROFILE PIC STYLING */
 
 .pfp {
-    display: flex;
+    /* display: flex; */
     width: 25rem;
     height: 25rem;
-    object-fit: contain;
+    object-fit: cover;
     box-sizing: border-box;
     border-radius: 50%;
     background-color: white;
     padding: 0.5rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 
 /* PAGE TITLE */
@@ -147,9 +147,11 @@ body {
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 3rem;
     margin: 0 auto;
+    padding: 2rem 2rem;
 }
 
 .hello-title {
@@ -158,21 +160,23 @@ body {
     font-weight: bold;
     text-decoration: underline;
     display: flex;
-    justify-content: right;
+    /* justify-content: right; */
 }
 
 .about-me-title {
     color: rgb(68, 43, 116);
     font-size: 1.5rem;
     display: flex;
-    justify-content: right;
+    /* justify-content: right; */
 }
 
 .about-me-description {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+    margin-left: 80px;
 }
 
 
