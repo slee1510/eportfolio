@@ -123,13 +123,17 @@ body {
 
 .pfp {
     /* display: flex; */
-    width: 25rem;
-    height: 25rem;
+    width: 27rem;
+    height: 36rem;
     object-fit: cover;
     box-sizing: border-box;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-color: white;
     padding: 0.5rem;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    margin-top: 1px;
     /* margin-left: 5rem; */
 }
 
@@ -140,6 +144,8 @@ body {
     font-size: 2.3rem;
     display: flex;
     justify-content: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
 }
 
 /* ABOUT ME TITLE */
@@ -147,8 +153,9 @@ body {
 .about-me-container {
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 3rem;
     margin: 0 auto;
     padding: 2rem 2rem;
@@ -160,27 +167,29 @@ body {
     font-weight: bold;
     text-decoration: underline;
     display: flex;
+    margin-top: 1px;
     /* justify-content: right; */
 }
 
 .about-me-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
     text-align: center;
-    max-width: 400px;
+    max-width: 600px;
     /* margin-left: 80px; */
 }
 
 .about-me-paragraph {
     color: rgb(68, 43, 116);
     font-size: 1.2rem;
-    display: flex;
-    justify-content: right;
-    align-items: left;
+    /* display: flex; */
+    /* justify-content: right; */
+    /* align-items: left; */
     text-align: left;
     margin-top: 4px;
     margin-bottom: 4px;
+    line-height: 1.5;
 }
 
 
