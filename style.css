@@ -4,12 +4,16 @@ body, html {
 }
 
 body {
-    background-color: rgb(234, 220, 247);
+    /* background-color: rgb(234, 220, 247); */
+    background-color: #EDE3E9;
 }
 
 .navbar {
-    background-color: rgb(129, 129, 213);
-    color: rgb(216, 194, 236);
+    /* background-color: rgb(129, 129, 213); */
+    background-color: #C09BD8;
+    /* color: rgb(216, 194, 236); */
+    /* color: #EBC3DB; */
+    color: #EDE3E9;
     padding: 2rem 2rem; /* Padding for the entire navbar */
     width: 100%;
     box-sizing: border-box;
@@ -41,7 +45,9 @@ body {
 }
 
 .nav-right a {
-    color: rgb(216, 194, 236);
+    /* color: rgb(216, 194, 236); */
+    /* color: #EBC3DB; */
+    color: #EDE3E9;
     text-decoration: none;
 }
 
@@ -58,8 +64,11 @@ body {
 /* FOOTER STYLE */
 
 .footbar {
-    background-color: rgb(129, 129, 213);
-    color: rgb(216, 194, 236);
+    /* background-color: rgb(129, 129, 213);
+    color: rgb(216, 194, 236); */
+    background-color: #C09BD8;
+    /* color: #EBC3DB; */
+    color: #EDE3E9;
     padding: 2rem 2rem; /* Padding for the entire navbar */
     width: 100%;
     box-sizing: border-box;
@@ -146,6 +155,7 @@ body {
     justify-content: center;
     margin-bottom: 1px;
     margin-top: 25px;
+    text-decoration: underline;
 }
 
 /* ABOUT ME TITLE */
@@ -193,36 +203,54 @@ body {
     line-height: 1.5;
 }
 
+/* RESUME PAGE STYLING */
+/* .page-title {} already made */
 
-
-/* .navbar {
-    background-color: rgb(129, 129, 213);
-    color: rgb(216, 194, 236);
-    padding: 2rem 2rem; Padding for the entire navbar
-    width: 100%;
-    box-sizing: border-box;
+.resume-image {
+    /* width: 27rem;
+    height: 36rem; */
+    width: 95%;
+    aspect-ratio: 3 / 3.7;
+    max-width: 1000px;
+    object-fit: cover;
+    /* box-sizing: border-box;
+    background-color: rgb(68, 43, 116);
+    padding: 0.2rem; */
+    float: left;
+    /* margin-right: 15px; */
+    margin-bottom: 15px;
+    margin-top: 1px;
+    /* margin-left: 5rem; */
 }
 
-.nav-container {
+#resume-body {
     display: flex;
-    justify-content: space-between; Aligns nav-left to left and nav-right to right
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 1200px; Optional: limit max width
-    margin: 0 auto; Center the container horizontally
+    padding: 1rem;
 }
 
-.nav-left {
-    font-size: 2rem;
+#resume-page .page-title {
+    margin-bottom: 0rem;
+    /* margin-top: 1.5rem; */
+}
+
+#resume-download {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(216, 194, 236);
+    color: rgb(68, 43, 116);
     font-family: 'Playfair Display', serif;
+    font-size: 1rem;
     font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.nav-right {
-    list-style: none;
-    font-size: 1.1rem;
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-} */
+#resume-download:hover {
+    background-color:  rgb(188, 138, 235);
+}
