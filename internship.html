@@ -8,13 +8,207 @@
 </head>
 <body>
     <div id="header-placeholder"></div>
-  <!-- <main>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the homepage.</p>
-  </main> -->
+  <main>
+    <!-- <h1>Welcome to My Portfolio</h1>
+    <p>This is the homepage.</p> -->
+
+
+    <!-- Photo gallery testing -->
+    <!-- <div class="gallery-container">
+
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/photo1.jpg" alt="Photo 1">
+            </div>
+            <div class="card-back">
+              <p>This is a memory from Japan!</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="images/photo2.jpg" alt="Photo 2">
+            </div>
+            <div class="card-back">
+              <p>Sunset on the coast 🌅</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/photo2.jpg" alt="Photo 2">
+              </div>
+              <div class="card-back">
+                <p>Sunset on the coast 🌅</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/photo2.jpg" alt="Photo 2">
+              </div>
+              <div class="card-back">
+                <p>Sunset on the coast 🌅</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/photo2.jpg" alt="Photo 2">
+              </div>
+              <div class="card-back">
+                <p>Sunset on the coast 🌅</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/photo2.jpg" alt="Photo 2">
+              </div>
+              <div class="card-back">
+                <p>Sunset on the coast 🌅</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/photo2.jpg" alt="Photo 2">
+              </div>
+              <div class="card-back">
+                <p>Sunset on the coast 🌅</p>
+              </div>
+            </div>
+          </div>
+  
+      
+        Add more cards here
+      </div> -->
+    
+    <!-- end of photo gallery -->
+
+    <div class="gallery-container">
+        <!-- <button class="arrow left" onclick="scrollGallery(-1)">&#8592;</button> -->
+        <button id="prev">&#9664;</button>
+        <div class="gallery-scroll" id="galleryScroll">
+          <!-- Your flipping cards go here -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/abt_pfp.jpg" alt="Photo 1">
+              </div>
+              <div class="card-back">
+                <p>Trip to Kyoto</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="images/email.png" alt="Photo 2">
+              </div>
+              <div class="card-back">
+                <p>Hiking adventure!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="images/home_pfp.jpg" alt="Photo 2">
+                </div>
+                <div class="card-back">
+                  <p>Hiking adventure!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="images/link.png" alt="Photo 2">
+                </div>
+                <div class="card-back">
+                  <p>Hiking adventure!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="images/pfp_square.jpg" alt="Photo 2">
+                </div>
+                <div class="card-back">
+                  <p>Hiking adventure!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="images/abt_pfp.jpg" alt="Photo 2">
+                </div>
+                <div class="card-back">
+                  <p>Hiking adventure!</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <img src="images/email.png" alt="Photo 2">
+                </div>
+                <div class="card-back">
+                  <p>Hiking adventure!</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <button id="next">&#9654;</button>
+      
+        <!-- <button class="arrow right" onclick="scrollGallery(1)">&#8594;</button> -->
+      </div>
+            
+  
+            <!-- Add 2–4 more cards as needed -->
+          <!-- </div> -->
+      
+          <!-- <button class="scroll-button right" onclick="scrollGallery(1)">&#9654;</button> -->
+        <!-- </div> -->
+      </section>
+      
+
+
+  </main>
 
   <div id="footer-placeholder"></div>
 
   <script src="script.js"></script>
+  <!-- // scrapbook test code -->
+
+  <script>
+  const pages = document.querySelectorAll('.page');
+
+  pages.forEach((page, index) => {
+    page.style.zIndex = pages.length - index;
+
+    page.addEventListener('click', () => {
+      page.classList.toggle('flipped');
+    });
+  });
+</script>
+
 </body>
 </html>
