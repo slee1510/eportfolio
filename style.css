@@ -5,15 +5,19 @@ body, html {
 
 body {
     /* background-color: rgb(234, 220, 247); */
-    background-color: #EDE3E9;
+    /* background-color: #EDE3E9; PURPLE COLOR SCHEME */
+    background-color: #E6EFE9
 }
 
 .navbar {
     /* background-color: rgb(129, 129, 213); */
-    background-color: #C09BD8;
+    /* background-color: #C09BD8; PURPLE COLOR SCHEME */
+    background-color: #A7C4A0;
     /* color: rgb(216, 194, 236); */
     /* color: #EBC3DB; */
-    color: #EDE3E9;
+    /* color: #EDE3E9; PURPLE COLOR SCHEME */
+    /* color: #F6FAF8; */
+    color: #E6EFE9;
     padding: 2rem 2rem; /* Padding for the entire navbar */
     width: 100%;
     box-sizing: border-box;
@@ -47,7 +51,8 @@ body {
 .nav-right a {
     /* color: rgb(216, 194, 236); */
     /* color: #EBC3DB; */
-    color: #EDE3E9;
+    /* color: #EDE3E9; PURPLE COLOR SCHEME */
+    color: #F6FAF8;
     text-decoration: none;
 }
 
@@ -56,7 +61,8 @@ body {
 }
 
 .nav-right a.active {
-    color: rgb(88, 54, 119);
+    /* color: rgb(88, 54, 119); PURPLE COLOR SCHEME */
+    color: #415D43;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -66,9 +72,12 @@ body {
 .footbar {
     /* background-color: rgb(129, 129, 213);
     color: rgb(216, 194, 236); */
-    background-color: #C09BD8;
+    /* background-color: #C09BD8; PURPLE COLOR SCHEME */
+    background-color: #A7C4A0;
     /* color: #EBC3DB; */
-    color: #EDE3E9;
+    /* color: #EDE3E9; PURPLE COLOR SCHEME */
+    color: #F6FAF8;
+    /* color: #C2EABA; */
     padding: 2rem 2rem; /* Padding for the entire navbar */
     width: 100%;
     box-sizing: border-box;
@@ -117,14 +126,15 @@ body {
 
 .icon-link img:hover {
     transform: scale(1.1);
-    background-color: rgb(216, 194, 236);
+    /* background-color: rgb(216, 194, 236); */
 }
 
 .email-icon {
     padding: 0.2rem;
     width: 30px;
     height: 30px;
-    background-color: rgb(216, 194, 236);
+    /* background-color: rgb(216, 194, 236); */
+    background-color: #C7DAC3;
     border-radius: 50%;
 }
 
@@ -137,7 +147,8 @@ body {
     object-fit: cover;
     box-sizing: border-box;
     /* border-radius: 50%; */
-    background-color: white;
+    /* background-color: white; */
+    background-color: #C7DAC3;
     padding: 0.5rem;
     float: left;
     /* margin-right: 15px; */
@@ -149,7 +160,8 @@ body {
 /* PAGE TITLE */
 
 .page-title {
-    color: rgb(68, 43, 116);
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
+    color: #415D43;
     font-size: 2.3rem;
     display: flex;
     justify-content: center;
@@ -159,11 +171,12 @@ body {
 }
 
 .page-subtitle {
-    color: rgb(68, 43, 116);
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME  */
+    color: #415D43;
     font-size: 1.7rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     margin-top: 25px;
     /* text-decoration: underline; */
 }
@@ -182,7 +195,8 @@ body {
 }
 
 .about-me-title {
-    color: rgb(68, 43, 116);
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
+    color: #415D43;
     font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
@@ -202,7 +216,8 @@ body {
 }
 
 .about-me-paragraph {
-    color: rgb(68, 43, 116);
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME  */
+    color: #2F3B2B;
     font-size: 1.2rem;
     /* display: flex; */
     /* justify-content: right; */
@@ -249,8 +264,10 @@ body {
 #resume-download {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: rgb(216, 194, 236);
-    color: rgb(68, 43, 116);
+    /* background-color: rgb(216, 194, 236); PURPLE COLOR SCHEME */
+    background-color: #C7DAC3;
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
+    color: #415D43;
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
     font-weight: bold;
@@ -262,7 +279,8 @@ body {
 }
 
 #resume-download:hover {
-    background-color:  rgb(188, 138, 235);
+    /* background-color:  rgb(188, 138, 235); PURPLE COLOR SCHEME  */
+    background-color: #A7C4A0;
 }
 
 /* SINGAPORE PAGE STYLING */
@@ -328,8 +346,11 @@ body {
   }
   
   .card-back {
-    background-color: #E6E4CE;
-    color: rgb(68, 43, 116);
+    /* background-color: #E6E4CE; PURPLE COLOR SCHEME */
+    background-color: #C7DAC3;
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
+    color: #415D43;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,7 +381,8 @@ body {
   }
 
   .arrow {
-    background-color: #C09BD8;
+    /* background-color: #C09BD8; PURPLE COLOR SCHEME */
+    background-color: #E6EFE9;
     border: none;
     color: white;
     font-size: 2rem;
@@ -371,7 +393,8 @@ body {
   }
   
   .arrow:hover {
-    background-color: #a97bc3;
+    /* background-color: #a97bc3; PURPLE COLOR SCHEME  */
+    background-color: #bccdc1;
   }
   
   .gallery-container {
@@ -417,7 +440,7 @@ body {
     object-fit: cover;
     box-sizing: border-box;
     /* border-radius: 50%; */
-    background-color: white;
+    background-color: #C7DAC3;
     padding: 0.5rem;
     float: left;
     /* margin-right: 15px; */
@@ -432,7 +455,8 @@ body {
   }
 
   .singapore-description-text {
-    color: rgb(68, 43, 116);
+    /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
+    color: #2F3B2B;
     font-size: 1.2rem;
     text-align: left;
     margin-top: 4px;
@@ -444,8 +468,8 @@ body {
 
   .section-divider {
     border: none;
-    border-top: 2px solid rgb(68, 43, 116); /* Accent color */
-    background-color: yellow; /* temp to debug spacing */
+    /* border-top: 2px solid rgb(68, 43, 116); PURPLE COLOR SCHEME */
+    border-top: 2px solid #415D43;
     width: 80%;
     margin: 2rem auto; /* <-- center the line */
   }
