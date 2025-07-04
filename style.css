@@ -149,7 +149,7 @@ body {
     /* border-radius: 50%; */
     /* background-color: white; */
     background-color: #C7DAC3;
-    padding: 0.5rem;
+    padding: 1rem;
     float: left;
     /* margin-right: 15px; */
     margin-bottom: 0px;
@@ -301,7 +301,7 @@ body {
     gap: 1rem;
     overflow-x: auto;
     padding: 2rem;
-    scroll-snap-type: x mandatory;
+    /* scroll-snap-type: x mandatory; */
   }
   
   .card {
@@ -441,7 +441,7 @@ body {
     box-sizing: border-box;
     /* border-radius: 50%; */
     background-color: #C7DAC3;
-    padding: 0.5rem;
+    padding: 1rem;
     float: left;
     /* margin-right: 15px; */
     margin-bottom: 0px;
