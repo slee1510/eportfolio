@@ -49,6 +49,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   font-size: 2rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
+  color: #F6FAF8;
+  text-decoration: none;
   }
   
   .nav-right {
