@@ -4,6 +4,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   padding: 0;
   }
   
+  html {
+    /* background-color: #1a1a2e; A dark color to match your theme */
+    background-color: #DBDCE7;
+    /* Or use your existing page color: #DBDCE7 */
+  }  
+
   body {
   /* background-color: rgb(234, 220, 247); */
   /* background-color: #EDE3E9; PURPLE COLOR SCHEME */
@@ -336,16 +342,25 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   /* scrapbook testing */
-  .gallery-container {
+  /* .gallery-container {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   padding: 2rem;
-  /* scroll-snap-type: x mandatory; */
+  }*/
+
+  .gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%; /* Use almost the full width of the screen */
+    max-width: 1200px; /* But cap it on large screens */
+    margin: 0 auto; /* Center the whole component */
   }
   
   .card {
-  flex: 0 0 auto;
+  /* flex: 0 0 auto; */
+  flex: 0 0 200px;
   width: 200px;
   height: 260px;
   perspective: 1000px;
@@ -400,43 +415,25 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   font-family: 'Playfair Display', serif;
   }
   
+
   .gallery-scroll {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  overflow-x: hidden; /* Only allow horizontal programmatic scroll */
-  overflow-y: hidden; /* Prevent vertical scrollbar */
-  scroll-behavior: smooth;
-  width: 80%;
-  max-width: 1000px;
-  height: 300px; /* Set a fixed height for consistency */
-  align-items: center; /* Vertically center cards */
-  pointer-events: none; /* Disable dragging */
-  transition: transform 0.5s ease;
+    display: flex;
+    flex-wrap: wrap;          /* This is the key: allows cards to drop to the next line */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 2rem;               /* Sets the space between your cards */
+    padding: 1rem;             /* Adds some space around the whole gallery */
   }
+  
+  
+  .gallery-scroll::-webkit-scrollbar {
+    display: none;
+  }  
   
   .gallery-scroll > * {
   pointer-events: auto; /* Allow clicks on child elements */
   flex: 0 0 auto; /* Prevent shrinking or wrapping */
   }
-  
-  .arrow {
-  /* background-color: #C09BD8; PURPLE COLOR SCHEME */
-  background-color: #E6EFE9;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  user-select: none;
-  z-index: 10;
-  }
-  
-  .arrow:hover {
-  /* background-color: #a97bc3; PURPLE COLOR SCHEME */
-  background-color: #bccdc1;
-  }
-  
+    
   .gallery-container {
   display: flex;
   align-items: center;
@@ -507,7 +504,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   border: none;
   /* border-top: 2px solid rgb(68, 43, 116); PURPLE COLOR SCHEME */
   /* border-top: 2px solid #415D43; */
-  border-top: 2px solid #2E3768;
+  border-top: 2px solid #b4bffe;
   width: 80%;
   margin: 2rem auto; /* <-- center the line */
   }
@@ -539,42 +536,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   font-size: 20px;
   margin-bottom: 20px;
   }
-  
-  /* .nav-buttons-div {
-  display: flex;
-  justify-content: center; 
-  gap: 4rem;
-  margin-top: 1rem;
-  margin-bottom: 2cqmin;
-  }
-  
-  .circle-nav-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  width: 150px;
-  height: 250px;
-  object-fit: contain;
-  box-sizing: border-box;
-  border-radius: 25%;
-  margin-top: 0.01rem;
-  margin-bottom: 0.01rem;
-  transition: transform 0.2 ease;
-  background: #41468a;
-  background: radial-gradient(circle,rgba(65, 70, 138, 1) 0%, rgba(13, 28, 72, 1) 100%);
-  color: #b4c3c9;
-  font-size: 20px;
-  }
-  
-  .circle-nav-buttons:hover {
-  transition: transform 0.2 ease;
-  transform: scale(1.05);
-  background-color: rgb(52, 47, 90);
-  border-color: white;
-  } */
-  
+    
   .email-icon {
   padding: 0.2rem;
   width: 30px;
@@ -615,3 +577,72 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
     width: 240px;
   }
   
+  
+/* Main container for the entire skills section */
+.skills-section-container {
+  width: 100%;
+  padding: 3rem 1rem; /* Add vertical and horizontal space */
+  /* Optional: Add a solid background to separate it from the rest of the page */
+  /* background-color: #DBDCE7;  */
+}
+
+/* Title for the section */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #2E3768; /* Use a color from your palette */
+  margin-bottom: 2rem;
+}
+
+/* The grid that holds the three skill cards */
+.skills-grid {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  flex-wrap: wrap;         /* Allow cards to wrap on small screens */
+  gap: 2rem;               /* The space between the cards */
+  max-width: 1200px;       /* Limit the max width on large screens */
+  margin: 0 auto;          /* Center the grid itself */
+}
+
+/* Styling for each individual skill card */
+.skill-card {
+  background-color: #FFFFFF; /* A clean white background */
+  border-radius: 12px;       /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* A soft shadow for depth */
+  overflow: hidden;          /* Keeps the image corners rounded */
+  text-align: center;
+  
+  /* Flexbox properties for sizing */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px; /* Each card will have a base width of 300px */
+  flex-grow: 1;      /* Allows cards to grow to fill space */
+  max-width: 350px;  /* Prevents cards from getting too wide */
+}
+
+/* Styling for the image on top of the card */
+.skill-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures images are cropped nicely, not stretched */
+}
+
+/* Container for the text content below the image */
+.skill-card-text {
+  padding: 1.5rem;
+}
+
+.skill-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2E3768;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.skill-card p {
+  font-family: 'Lato', sans-serif; /* A clean sans-serif font for readability */
+  color: #333; /* Dark grey for body text */
+  line-height: 1.6;
+  font-size: 1rem;
+}
