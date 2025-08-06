@@ -416,24 +416,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
 
-  .gallery-scroll {
-    display: flex;
-    flex-wrap: wrap;          /* This is the key: allows cards to drop to the next line */
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 2rem;               /* Sets the space between your cards */
-    padding: 1rem;             /* Adds some space around the whole gallery */
-  }
-  
-  
-  .gallery-scroll::-webkit-scrollbar {
-    display: none;
-  }  
-  
-  .gallery-scroll > * {
-  pointer-events: auto; /* Allow clicks on child elements */
-  flex: 0 0 auto; /* Prevent shrinking or wrapping */
-  }
-    
   .gallery-container {
   display: flex;
   align-items: center;
