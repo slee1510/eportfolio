@@ -17,6 +17,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   
   main {
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   
   .navbar {
@@ -267,6 +270,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   margin-bottom: 15px;
   margin-top: 1px;
   /* margin-left: 5rem; */
+
+    display: block; /* Ensures margin: auto works */
+    margin: 2rem auto; /* Centers the image and adds space */
+    max-width: 900px; /* Controls the max size */
+    width: 90%; /* Makes it responsive */
+    
+    /* Add these lines for depth */
+    border: 3px solid #41395a; /* A subtle white border */
+    border-radius: 8px;     /* Slightly rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* A soft shadow */
+  
   }
   
   #resume-body {
@@ -298,6 +312,13 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+    /* Add these properties for centering */
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 1.5rem; Adds some space above the button */
+  
   }
   
   #resume-download:hover {
@@ -516,11 +537,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   flex: 1;
   max-width: 500px;
   font-size: 20px;
+  margin-bottom: 20px;
   }
   
-  .nav-buttons-div {
+  /* .nav-buttons-div {
   display: flex;
-  justify-content: center; /* <-- Add this line */
+  justify-content: center; 
   gap: 4rem;
   margin-top: 1rem;
   margin-bottom: 2cqmin;
@@ -539,10 +561,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   border-radius: 25%;
   margin-top: 0.01rem;
   margin-bottom: 0.01rem;
-  /* background-color: rgb(216, 194, 236);
-  padding: 0.2rem; */
   transition: transform 0.2 ease;
-  /* background-color: #0d1c48; */
   background: #41468a;
   background: radial-gradient(circle,rgba(65, 70, 138, 1) 0%, rgba(13, 28, 72, 1) 100%);
   color: #b4c3c9;
@@ -554,7 +573,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   transform: scale(1.05);
   background-color: rgb(52, 47, 90);
   border-color: white;
-  }
+  } */
   
   .email-icon {
   padding: 0.2rem;
