@@ -416,8 +416,18 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
 
+  .gallery-scroll {
+    display: flex;
+    flex-wrap: wrap;          /* This is the key: allows cards to drop to the next line */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 2rem;               /* Sets the space between your cards */
+    padding: 1rem;             /* Adds some space around the whole gallery */
+  }
+  
+      
   .gallery-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
