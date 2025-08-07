@@ -1,21 +1,14 @@
-/* body, html { */
 body, h1, h2, h3, h4, h5, h6, p, figure {
   margin: 0;
   padding: 0;
   }
   
   html {
-    /* background-color: #1a1a2e; A dark color to match your theme */
     background-color: #DBDCE7;
-    /* Or use your existing page color: #DBDCE7 */
   }  
 
   body {
-  /* background-color: rgb(234, 220, 247); */
-  /* background-color: #EDE3E9; PURPLE COLOR SCHEME */
-  /* background-color: #E6EFE9 */
   background-color: #DBDCE7;
-  /* background-image: url("images/background.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,18 +22,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .navbar {
-  /* background-color: rgb(129, 129, 213); */
-  /* background-color: #C09BD8; PURPLE COLOR SCHEME */
-  /* background-color: #A7C4A0; */
   background-color: #ABB2C9;
-  /* color: rgb(216, 194, 236); */
-  /* color: #EBC3DB; */
-  /* color: #EDE3E9; PURPLE COLOR SCHEME */
-  /* color: #F6FAF8; */
-  /* color: #E6EFE9; */
-  /* color: #DBDCE7; */
   color: #F6FAF8;
-  padding: 2rem 2rem; /* Padding for the entire navbar */
+  padding: 2rem 2rem;
   width: 100%;
   box-sizing: border-box;
   }
@@ -48,10 +32,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   .nav-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Aligns nav-left to left and nav-right to right */
+  justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Optional: limit max width */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
   }
   
   .nav-left {
@@ -73,9 +57,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .nav-right a {
-  /* color: rgb(216, 194, 236); */
-  /* color: #EBC3DB; */
-  /* color: #EDE3E9; PURPLE COLOR SCHEME */
   color: #F6FAF8;
   text-decoration: none;
   }
@@ -85,8 +66,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .nav-right a.active {
-  /* color: rgb(88, 54, 119); PURPLE COLOR SCHEME */
-  /* color: #415D43; */
   color: #2E3768;
   font-weight: bold;
   text-decoration: underline;
@@ -94,18 +73,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   
   /* FOOTER STYLE */
   .footbar {
-  /* background-color: rgb(129, 129, 213);
-  color: rgb(216, 194, 236); */
-  /* background-color: #C09BD8; PURPLE COLOR SCHEME */
-  /* background-color: #A7C4A0; */
   background-color: #ABB2C9;
-  /* color: #EBC3DB; */
-  /* color: #EDE3E9; PURPLE COLOR SCHEME */
-  /* color: #F6FAF8; */
-  /* color: #DBDCE7; */
   color: #F6FAF8;
-  /* color: #C2EABA; */
-  padding: 2rem 2rem; /* Padding for the entire navbar */
+  padding: 2rem 2rem;
   width: 100%;
   box-sizing: border-box;
   }
@@ -113,22 +83,20 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   .foot-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Aligns nav-left to left and nav-right to right */
+  justify-content: center;
   align-items: center;
-  max-width: 1200px; /* Optional: limit max width */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
   }
   
   .foot-name {
   font-size: 1.3rem;
   font-family: 'Playfair Display', serif;
-  /* font-weight: bold; */
   }
   
   .foot-email {
   font-size: 1rem;
   font-family: 'Playfair Display', serif;
-  /* font-weight: bold; */
   margin-bottom: 0.01;
   }
   
@@ -146,70 +114,46 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   border-radius: 50%;
   margin-top: 0.01rem;
   margin-bottom: 0.01rem;
-  /* background-color: rgb(216, 194, 236);
-  padding: 0.2rem; */
   transition: transform 0.2 ease;
   }
   
   .icon-link img:hover {
   transform: scale(1.1);
-  /* background-color: rgb(216, 194, 236); */
   }
   
   .email-icon {
   padding: 0.2rem;
   width: 30px;
   height: 30px;
-  /* background-color: rgb(216, 194, 236); */
-  /* background-color: #C7DAC3; */
   background-color: #DBDCE7;
   border-radius: 50%;
   }
   
   /* PROFILE PIC STYLING */
   .pfp {
-  /* display: flex; */
-  /* width: 27rem;
-  height: 36rem; */
   width: 24rem;
-  /* height: 32rem; */
   object-fit: cover;
   box-sizing: border-box;
-  /* border-radius: 50%; */
-  /* background-color: white; */
-  /* background-color: #C7DAC3; */
-  /* background-color: #606679; */
   padding: 1rem;
-  /* float: left; */
-  /* margin-right: 15px; */
   margin-bottom: 0px;
   margin-top: 1px;
-  /* margin-left: 5rem; */
   }
   
   /* PAGE TITLE */
   .page-title {
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* color: #415D43; */
   color: #2E3768;
   font-size: 2.3rem;
   display: flex;
   justify-content: center;
   margin-bottom: 1px;
-  /* margin-top: 25px; */
-  /* text-decoration: underline; */
   }
   
   .page-subtitle {
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* color: #415D43; */
   color: #2E3768;
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  /* margin-top: 25px; */
-  /* text-decoration: underline; */
   }
   
   /* ABOUT ME TITLE */
@@ -225,8 +169,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .about-me-title {
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* color: #415D43; */
   color: #2E3768;
   font-size: 2rem;
   font-weight: bold;
@@ -234,59 +176,37 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   display: flex;
   margin-top: 1px;
   margin-bottom: 15px;
-  /* justify-content: right; */
   }
   
   .about-me-description {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   text-align: center;
   max-width: 600px;
-  /* margin-left: 80px; */
   }
   
   .about-me-paragraph {
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* color: #2F3B2B; */
   color: #1B2137;
   font-size: 1.2rem;
-  /* display: flex; */
-  /* justify-content: right; */
-  /* align-items: left; */
   text-align: left;
   margin-top: 4px;  
   line-height: 1.5;
   }
   
   /* RESUME PAGE STYLING */
-  /* .page-title {} already made */
   .resume-image {
-  /* width: 27rem;
-  height: 36rem; */
   width: 95%;
   aspect-ratio: 3 / 3.7;
   max-width: 1000px;
   object-fit: cover;
-  /* box-sizing: border-box;
-  background-color: rgb(68, 43, 116);
-  padding: 0.2rem; */
   float: left;
-  /* margin-right: 15px; */
   margin-bottom: 15px;
   margin-top: 1px;
-  /* margin-left: 5rem; */
-
-    display: block; /* Ensures margin: auto works */
-    margin: 2rem auto; /* Centers the image and adds space */
-    max-width: 900px; /* Controls the max size */
-    width: 90%; /* Makes it responsive */
-    
-    /* Add these lines for depth */
-    border: 3px solid #41395a; /* A subtle white border */
-    border-radius: 8px;     /* Slightly rounded corners */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* A soft shadow */
-  
+  display: block;
+  margin: 2rem auto;
+  max-width: 900px;
+  width: 90%;
+  border: 3px solid #41395a; 
+  border-radius: 8px; 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
   
   #resume-body {
@@ -299,16 +219,12 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   
   #resume-page .page-title {
   margin-bottom: 0rem;
-  /* margin-top: 1.5rem; */
   }
   
   #resume-download {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  /* background-color: rgb(216, 194, 236); PURPLE COLOR SCHEME */
   background-color: #bdc4e4;
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* color: #415D43; */
   color: #2E3768;
   font-family: 'Playfair Display', serif;
   font-size: 1rem;
@@ -318,17 +234,13 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-    /* Add these properties for centering */
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 1.5rem; Adds some space above the button */
-  
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   }
   
   #resume-download:hover {
-  /* background-color: rgb(188, 138, 235); PURPLE COLOR SCHEME */
   background-color: #979ebc;
   }
   
@@ -341,25 +253,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   padding: 1rem;
   }
   
-  /* scrapbook testing */
-  /* .gallery-container {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding: 2rem;
-  }*/
 
   .gallery-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%; /* Use almost the full width of the screen */
-    max-width: 1200px; /* But cap it on large screens */
-    margin: 0 auto; /* Center the whole component */
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .card {
-  /* flex: 0 0 auto; */
   flex: 0 0 200px;
   width: 200px;
   height: 260px;
@@ -401,10 +305,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .card-back {
-  /* background-color: #E6E4CE; PURPLE COLOR SCHEME */
   background-color: #ABB2C9;
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* color: #415D43; */
   color: #2E3768;
   display: flex;
   align-items: center;
@@ -418,10 +319,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
 
   .gallery-scroll {
     display: flex;
-    flex-wrap: wrap;          /* This is the key: allows cards to drop to the next line */
-    justify-content: center; /* Centers the cards horizontally */
-    gap: 2rem;               /* Sets the space between your cards */
-    padding: 1rem;             /* Adds some space around the whole gallery */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
   }
   
       
@@ -447,7 +348,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .singapore-image-container {
-  /* ADD CSS STYLING HERE */
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
@@ -459,21 +359,15 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .singapore-images {
-  /* DO I NEED CSS STYLING FOR THE IMAGE? */
-  /* display: flex; */
   width: 27rem;
   height: 36rem;
   object-fit: cover;
   box-sizing: border-box;
-  /* border-radius: 50%; */
-  /* background-color: #C7DAC3; */
   background-color: #ABB2C9;
   padding: 1rem;
   float: left;
-  /* margin-right: 15px; */
   margin-bottom: 0px;
   margin-top: 1px;
-  /* margin-left: 5rem; */
   }
   
   .singapore-description-container {
@@ -482,7 +376,6 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   }
   
   .singapore-description-text {
-  /* color: rgb(68, 43, 116); PURPLE COLOR SCHEME */
   color: #2F3B2B;
   font-size: 1.2rem;
   text-align: left;
@@ -494,15 +387,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   /* SECTION DIVIDER LINE */
   .section-divider {
   border: none;
-  /* border-top: 2px solid rgb(68, 43, 116); PURPLE COLOR SCHEME */
-  /* border-top: 2px solid #415D43; */
   border-top: 2px solid #b4bffe;
   width: 80%;
-  margin: 2rem auto; /* <-- center the line */
-  }
-  
-  .gallery-section {
-  /* CSS STYLING? */
+  margin: 2rem auto;
   }
   
   #overlay {
@@ -533,19 +420,17 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
   padding: 0.2rem;
   width: 30px;
   height: 30px;
-  /* background-color: rgb(216, 194, 236); */
-  /* background-color: #C7DAC3; */
   background-color: #DBDCE7;
   border-radius: 50%;
   }
 
   .polaroid-div {
     display: flex;
-    justify-content: center; /* <-- Add this line */
+    justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap; /* <-- Add this line */
+    flex-wrap: wrap;
     margin-top: 3rem;
-    margin-bottom: 2rem; /* I've changed '2cqmin' to '2rem' for consistency */
+    margin-bottom: 2rem;
   }
 
   .polaroid-1 {
@@ -557,70 +442,60 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
 
   .polaroid-2 {
     transform: rotate(3deg) translate(5px, 10px);
-    z-index: 2; /* This one will be on top of the first one */
+    z-index: 2;
     height: 320px;
     width: 240px;
   }
   
   .polaroid-3 {
     transform: rotate(-2deg) translate(-5px, -10px);
-    z-index: 3; /* This one will be on top of the other two */
+    z-index: 3;
     height: 320px;
     width: 240px;
   }
   
   
-/* Main container for the entire skills section */
 .skills-section-container {
   width: 100%;
-  padding: 3rem 1rem; /* Add vertical and horizontal space */
-  /* Optional: Add a solid background to separate it from the rest of the page */
-  /* background-color: #DBDCE7;  */
+  padding: 3rem 1rem;
 }
 
-/* Title for the section */
 .section-title {
   text-align: center;
   font-size: 2.5rem;
   font-family: 'Playfair Display', serif;
-  color: #2E3768; /* Use a color from your palette */
+  color: #2E3768;
   margin-bottom: 2rem;
 }
 
-/* The grid that holds the three skill cards */
 .skills-grid {
   display: flex;
-  justify-content: center; /* Center the cards horizontally */
-  flex-wrap: wrap;         /* Allow cards to wrap on small screens */
-  gap: 2rem;               /* The space between the cards */
-  max-width: 1200px;       /* Limit the max width on large screens */
-  margin: 0 auto;          /* Center the grid itself */
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Styling for each individual skill card */
 .skill-card {
-  background-color: #FFFFFF; /* A clean white background */
-  border-radius: 12px;       /* Rounded corners */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* A soft shadow for depth */
-  overflow: hidden;          /* Keeps the image corners rounded */
+  background-color: #bfc3d4;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
-  
-  /* Flexbox properties for sizing */
   display: flex;
   flex-direction: column;
-  flex-basis: 300px; /* Each card will have a base width of 300px */
-  flex-grow: 1;      /* Allows cards to grow to fill space */
-  max-width: 350px;  /* Prevents cards from getting too wide */
+  flex-basis: 300px;
+  flex-grow: 1;
+  max-width: 350px;
 }
 
-/* Styling for the image on top of the card */
 .skill-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensures images are cropped nicely, not stretched */
+  object-fit: cover;
 }
 
-/* Container for the text content below the image */
 .skill-card-text {
   padding: 1.5rem;
 }
@@ -633,8 +508,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure {
 }
 
 .skill-card p {
-  font-family: 'Lato', sans-serif; /* A clean sans-serif font for readability */
-  color: #333; /* Dark grey for body text */
+  font-family: 'Lato', sans-serif;
+  color: #333;
   line-height: 1.6;
   font-size: 1rem;
 }
